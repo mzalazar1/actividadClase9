@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: #204862;
+}
+
+.contentform{
+    display: flex;
+    margin-left: 20px;
+    width: 80%;
+    justify-content: center;
+    align-content: center;
+    background-color: blue;
+}
+
+.col1{
+    width: 50%;
+}
+
+.col2{
+    width: 50%;
+}
+
+#nameError {
+    color: red;
+}
+
+#apeError {
+    color: red;
+}
+
+#direError {
+    color: red;
+}
+
+#telError {
+    color: red;
+}
+#mailError {
+    color: red;
+}
+
+#passError {
+    color: red;
+}
+
+.hiddenError {
+    display: none;
+}
+
+@media (max-width:768px){
+    .contentform{
+        flex-direction: column;     
+    }
+    .col1{
+        width: 100%;
+    }
+    .col2{
+        width: 100%;
+    } 
+
+}
